@@ -46,7 +46,24 @@ O fluxo abaixo ilustra o mapeamento da requisição e a integração entre os co
 
 ---
 
+## ✅ Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+
+- [Python 3.10+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/)
+- Uma conta na [AWS](https://aws.amazon.com/) com um bucket S3 criado e as credenciais de acesso (Access Key e Secret Key) geradas via IAM.
+
+---
+
 ## ⚙️ Configuração e Execução do Ambiente
+
+### 0. Clonar o Repositório
+
+```bash
+git clone https://github.com/tarciofernandes14/api-backup-s3.git
+cd api-backup-s3
+```
 
 ### 1. Instalação de Dependências
 
