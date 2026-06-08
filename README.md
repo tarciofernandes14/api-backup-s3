@@ -15,6 +15,7 @@ Esta API foi desenvolvida em Flask com o objetivo de atuar como um microsserviç
 
 O fluxo abaixo ilustra o mapeamento da requisição e a integração entre os componentes:
 
+```text
 [ Cliente / Sistema Local ]
            │
            ▼ (Requisição HTTP POST - Multipart/Form-Data)
@@ -22,15 +23,14 @@ O fluxo abaixo ilustra o mapeamento da requisição e a integração entre os co
 │                      API FLASK                         │
 │                                                        │
 │  1. Recebimento do arquivo digital localmente          │
-│  2. Validação de presença do campo 'file' no payload  │
+│  2. Validação de presença do campo 'file' no payload   │
 │  3. Leitura das credenciais via Python-Dotenv          │
 │  4. Inicialização do cliente seguro Boto3              │
 └────────────────────────────────────────────────────────┘
            │
            ▼ (Upload via Stream / Transmissão Segura)
 [ Amazon Web Services (AWS S3 Bucket) ]
-
----
+```
 
 ## 🛠️ Tecnologias e Dependências
 
